@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 app = FastAPI(title="Browser Automation Agent - Interact API")
 
 # Initialize Gemini (make sure to set GEMINI_API_KEY in environment variables)
-genai.configure(api_key="AIzaSyCoGZgxiG3fxp7DLbQiDJVeZWOQGTOiNRg")
+genai.configure(api_key="<YOURGEMINIAPIKEY>")
 model = genai.GenerativeModel('gemini-2.0-flash')
 chat = model.start_chat()
 
